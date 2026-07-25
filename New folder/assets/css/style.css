@@ -1,0 +1,115 @@
+/* assets/css/style.css */
+
+:root {
+    --primary-color: #0d6efd; /* Blue */
+    --secondary-color: #198754; /* Green */
+    --accent-color: #fd7e14; /* Orange/Warning */
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: #f4f7f6;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+}
+.secondary-nav .nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.secondary-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Search input */
+#searchInput:focus {
+    box-shadow: none;
+    border-color: var(--secondary-color);
+}
+
+/* Cart Icon */
+.cart-icon .badge {
+    font-size: 0.6rem;
+    transform: translate(-30%, -30%) !important;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #fff;
+}
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.discount-price {
+    color: #dc3545; /* Red */
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+
+/* Category Cards */
+.category-card {
+    border: none;
+    border-radius: 15px;
+    background-color: #e8f5e9;
+    transition: all 0.3s;
+}
+.category-card:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.03);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Footer Links */
+.footer-links a {
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: var(--secondary-color) !important;
+    text-decoration: underline !important;
+}
+
+/* Flash Sales Timer */
+.flash-timer span {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 3px;
+}
